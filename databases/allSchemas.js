@@ -7,11 +7,12 @@ import CookingSchema from "./cookingSchema";
 import FoodSchema from "./foodSchema";
 import VaccinationSchema from "./vaccinationSchema";
 import BalanceSchema from "./balanceSchema";
+import BabyNameSchema from "./babyNameSchema";
 
 Realm.copyBundledRealmFiles();
 const databaseOptions = {
     path: 'babau.realm',
-    schema: [WeekSchema, ExaminationSchema, TipSchema, CookingSchema, FoodSchema, VaccinationSchema, BalanceSchema],
+    schema: [WeekSchema, ExaminationSchema, TipSchema, CookingSchema, FoodSchema, VaccinationSchema, BalanceSchema, BabyNameSchema],
     schemaVersion: 65, //optional    
 
 };

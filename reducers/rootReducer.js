@@ -7,6 +7,7 @@ import foodReducer from "./foodReducer";
 import drinkReducer from "./drinkReducer";
 import vaccinationReducer from "./vaccinationReducer";
 import balanceReducer from "./balanceReducer";
+import babyNameReducer from "./babyNameReducer";
 
 const rootReducer = combineReducers({
     isConnected: connectedReducer,
@@ -15,7 +16,8 @@ const rootReducer = combineReducers({
     food: foodReducer,
     drink: drinkReducer,
     vaccination: vaccinationReducer,
-    balance: balanceReducer
+    balance: balanceReducer,
+    babyName: babyNameReducer
 });
 
 export default rootReducer;

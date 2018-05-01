@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { StackNavigator } from "react-navigation";
 
 // screenName
-import { HOME, DUEDATECALCULATOR, PREGNANCY, COOKING, FOOD, DRINK, VACCINATION, BALANCE } from "../values/screenName";
+import { HOME, DUEDATECALCULATOR, PREGNANCY, COOKING, FOOD, DRINK, VACCINATION, BALANCE, BABYNAME } from "../values/screenName";
 //StackNavigator
 import DueDateStack from "./DueDateStack";
 import PregnancyStack from "./PregnancyStack";
@@ -14,6 +14,7 @@ import DrinkStack from './DrinkStack';
 import HomeContainer from "../containers/Home/HomeContainer";
 import VaccinationContainer from "../containers/Vaccination/VaccinationContainer";
 import BalanceContainer from "../containers/Balance/BalanceContainer";
+import BabyNameContainer from "../containers/BabyName/BabyNameContainer";
 
 export default AppStack = StackNavigator(
     {
@@ -40,6 +41,9 @@ export default AppStack = StackNavigator(
         },
         BALANCE: {
             screen: BalanceContainer
+        },
+        BABYNAME: {
+            screen: BabyNameContainer
         },
     }, {
 

@@ -8,6 +8,7 @@ import { watchFetchFoodSaga } from "./foodSaga";
 import { watchFetchDrinkSaga } from "./drinkSaga";
 import { watchFetchVaccinationSaga } from "./vaccinationSaga";
 import { watchFetchBalanceSaga } from "./balanceSaga";
+import { watchFetchBabyNameSaga, watchFetchBabyNameFavouriteSaga } from "./babyNameSaga";
 
 export default function* rootSaga() {
     yield all([
@@ -21,5 +22,7 @@ export default function* rootSaga() {
         fork(watchFetchDrinkSaga),
         fork(watchFetchVaccinationSaga),
         fork(watchFetchBalanceSaga),
+        fork(watchFetchBabyNameSaga),
+        fork(watchFetchBabyNameFavouriteSaga)
     ]);
 }
