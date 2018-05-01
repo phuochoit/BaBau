@@ -8,3 +8,5 @@ export const BALANCESHEMA = 'Balance';
 export const BABYNAMESHEMA = 'BabyName';
 export const STORYSHEMA = 'Story';
 export const ACTIVITYSHEMA = 'Activity';
+export const DIARYSHEMA = 'Diary';
+export const MILESTONESHEMA = 'MileStone';

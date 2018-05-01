@@ -138,6 +138,10 @@ export const styles = StyleSheet.create({
         backgroundColor: bgColorApp,
         // position: 'relative',
     },
+
+    txt_color: {
+        color: color
+    },
     txt_color5: {
         color: color5
     },
@@ -190,7 +194,7 @@ export const styles = StyleSheet.create({
         padding: 15
     },
     ContentBoxH3: {
-        fontSize: 27
+        fontSize: 20
     },
     ContentBoxHeaderLeft: {
         alignItems: 'center'
@@ -375,7 +379,7 @@ export const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center'
     },
-    position_relative:  { 
+    position_relative: {
         position: 'relative'
     },
     full_image: {
@@ -388,13 +392,32 @@ export const styles = StyleSheet.create({
         flex: 1,
         borderRadius: 15
     },
-    cooking_detail_icon_heart : { 
-        color: colorbutton, 
-        position: 'absolute', 
-        top: 10, 
-        right: 10, 
+    cooking_detail_icon_heart: {
+        color: colorbutton,
+        position: 'absolute',
+        top: 10,
+        right: 10,
         fontSize: 30
+    },
+
+    row_mileStone: {
+        height: 40,
+        justifyContent: 'flex-start',
+        alignItems: 'center',
+        alignContent: 'center',
+        flex: 0
+    },
+    row_showMileStone: {
+        height: 40,
+        justifyContent: 'center',
+        alignItems: 'center',
+        alignContent: 'center',
+        borderTopWidth: 1,
+        borderTopColor: color4,
+        borderStyle: 'solid',
+        flex: 0
     }
+
 });
 
 

@@ -10,6 +10,8 @@ import balanceReducer from "./balanceReducer";
 import babyNameReducer from "./babyNameReducer";
 import stroryReducer from "./stroryReducer";
 import activityReducer from "./activityReducer";
+import agendaReducer from "./agendaReducer";
+import milestoneReducer from "./milestoneReducer";
 
 const rootReducer = combineReducers({
     isConnected: connectedReducer,
@@ -21,7 +23,9 @@ const rootReducer = combineReducers({
     balance: balanceReducer,
     babyName: babyNameReducer,
     story: stroryReducer,
-    activity: activityReducer
-}); 
+    activity: activityReducer,
+    agenda: agendaReducer,
+    milestone: milestoneReducer
+});
 
 export default rootReducer;

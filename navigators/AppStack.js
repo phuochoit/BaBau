@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { StackNavigator } from "react-navigation";
 
 // screenName
-import { HOME, DUEDATECALCULATOR, PREGNANCY, COOKING, FOOD, DRINK, VACCINATION, BALANCE, BABYNAME, STORY, STORYDETAIL, ACTIVITY, ACTIVITYDETAIL } from "../values/screenName";
+import { HOME, DUEDATECALCULATOR, PREGNANCY, COOKING, FOOD, DRINK, VACCINATION, BALANCE, BABYNAME, STORY, STORYDETAIL, ACTIVITY, ACTIVITYDETAIL, AGENDA, ADDAGENDA, UPDATEAGENDA } from "../values/screenName";
 //StackNavigator
 import DueDateStack from "./DueDateStack";
 import PregnancyStack from "./PregnancyStack";
@@ -22,6 +22,10 @@ import StoryDetailContainer from "../containers/Story/StoryDetailContainer";
 import ActivityContainer from "../containers/Activity/ActivityContainer";
 import ActivityDetailComponent from "../components/Activity/ActivityDetailComponent";
 
+// Agenda
+import AgendaContainer from "../containers/Agenda/AgendaContainer";
+import AgendaAddContainer from "../containers/Agenda/AgendaAddContainer";
+import AgendaUpdateContainer from "../containers/Agenda/AgendaUpdateContainer";
 
 export default AppStack = StackNavigator(
     {
@@ -64,6 +68,17 @@ export default AppStack = StackNavigator(
         ACTIVITYDETAIL: {
             screen: ActivityDetailComponent
         },
+        AGENDA: {
+            screen: AgendaContainer
+        },
+        ADDAGENDA: {
+            screen: AgendaAddContainer
+        },
+        UPDATEAGENDA: {
+            screen: AgendaUpdateContainer
+        },
+        
+        
     }, {
 
         headerMode: "none"
