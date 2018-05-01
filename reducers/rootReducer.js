@@ -9,6 +9,7 @@ import vaccinationReducer from "./vaccinationReducer";
 import balanceReducer from "./balanceReducer";
 import babyNameReducer from "./babyNameReducer";
 import stroryReducer from "./stroryReducer";
+import activityReducer from "./activityReducer";
 
 const rootReducer = combineReducers({
     isConnected: connectedReducer,
@@ -19,7 +20,8 @@ const rootReducer = combineReducers({
     vaccination: vaccinationReducer,
     balance: balanceReducer,
     babyName: babyNameReducer,
-    story: stroryReducer
-});
+    story: stroryReducer,
+    activity: activityReducer
+}); 
 
 export default rootReducer;

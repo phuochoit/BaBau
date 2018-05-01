@@ -7,3 +7,4 @@ export const VACCINATIONSHEMA = 'Vaccination';
 export const BALANCESHEMA = 'Balance';
 export const BABYNAMESHEMA = 'BabyName';
 export const STORYSHEMA = 'Story';
+export const ACTIVITYSHEMA = 'Activity';

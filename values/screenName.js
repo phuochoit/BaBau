@@ -13,6 +13,10 @@ export const DETAILNOTE = "DETAILNOTE";
 // BabyName
 export const BABYNAME = "BABYNAME";
 
+//Activity
+export const ACTIVITY = "ACTIVITY";
+export const ACTIVITYDETAIL = "ACTIVITYDETAIL";
+
 // Cooking
 export const COOKING = "COOKING";
 export const COOKINGDETAIL = "COOKINGDETAIL";

@@ -9,11 +9,12 @@ import VaccinationSchema from "./vaccinationSchema";
 import BalanceSchema from "./balanceSchema";
 import BabyNameSchema from "./babyNameSchema";
 import StorySchema from "./storySchema";
+import ActivityShema from "./activitySchema"
 
 Realm.copyBundledRealmFiles();
 const databaseOptions = {
     path: 'babau.realm',
-    schema: [WeekSchema, ExaminationSchema, TipSchema, CookingSchema, FoodSchema, VaccinationSchema, BalanceSchema, BabyNameSchema, StorySchema],
+    schema: [WeekSchema, ExaminationSchema, TipSchema, CookingSchema, FoodSchema, VaccinationSchema, BalanceSchema, BabyNameSchema, StorySchema, ActivityShema],
     schemaVersion: 65, //optional    
 
 };

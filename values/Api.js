@@ -1,5 +1,5 @@
 //screenName
-import { BABYNAME, AGENDA, COOKING, NOTE, PREGNANCY, STORY, FOOD, VACCINATION, BALANCE, DRINK} from "./screenName";
+import { BABYNAME, AGENDA, COOKING, NOTE, PREGNANCY, STORY, FOOD, VACCINATION, BALANCE, DRINK, ACTIVITY} from "./screenName";
 
 const list = [
     {
@@ -58,9 +58,9 @@ const list = [
     },
     {
         _id: 10,
-        name: 'Ghi Chú',
+        name: 'Hoạt động',
         image: 'ic_note.png',
-        navigation: NOTE,
+        navigation: ACTIVITY,
     },
 ];
 

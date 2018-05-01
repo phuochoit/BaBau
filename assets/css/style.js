@@ -22,7 +22,7 @@ const color9 = "#1F9F5F";
 const color10 = "#E74C3C";
 const color11 = "#2ECC71";
 const color12 = "#49B824";
-
+const color13 = "#3498DB";
 
 const colorbg = "#FAFAFA";
 const fontcolor1 = 'rgb(71, 67, 73)';
@@ -127,6 +127,9 @@ export const styles = StyleSheet.create({
     },
     bg_color12: {
         backgroundColor: color12,
+    },
+    bg_color13: {
+        backgroundColor: color13,
     },
     bg_transparent: {
         backgroundColor: 'transparent'

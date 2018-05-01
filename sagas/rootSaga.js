@@ -10,6 +10,7 @@ import { watchFetchVaccinationSaga } from "./vaccinationSaga";
 import { watchFetchBalanceSaga } from "./balanceSaga";
 import { watchFetchBabyNameSaga, watchFetchBabyNameFavouriteSaga } from "./babyNameSaga";
 import { watchFetchStorySaga, watchFetchStoryMoreSaga, watchFetchUpdatingStoryFavouriteSaga, watchFetchStoryFavouriteSaga } from "./storySaga";
+import { watchFetchActivitySaga } from "./activitySaga";
 export default function* rootSaga() {
     yield all([
         fork(watchFetchConnected),
@@ -28,5 +29,6 @@ export default function* rootSaga() {
         fork(watchFetchStoryMoreSaga),
         fork(watchFetchStoryFavouriteSaga),
         fork(watchFetchUpdatingStoryFavouriteSaga),
+        fork(watchFetchActivitySaga)
     ]);
 }

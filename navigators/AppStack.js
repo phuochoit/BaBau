@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { StackNavigator } from "react-navigation";
 
 // screenName
-import { HOME, DUEDATECALCULATOR, PREGNANCY, COOKING, FOOD, DRINK, VACCINATION, BALANCE, BABYNAME, STORY, STORYDETAIL } from "../values/screenName";
+import { HOME, DUEDATECALCULATOR, PREGNANCY, COOKING, FOOD, DRINK, VACCINATION, BALANCE, BABYNAME, STORY, STORYDETAIL, ACTIVITY, ACTIVITYDETAIL } from "../values/screenName";
 //StackNavigator
 import DueDateStack from "./DueDateStack";
 import PregnancyStack from "./PregnancyStack";
@@ -18,6 +18,10 @@ import BabyNameContainer from "../containers/BabyName/BabyNameContainer";
 //Story
 import StoryContainer from "../containers/Story/StoryContainer";
 import StoryDetailContainer from "../containers/Story/StoryDetailContainer";
+//ACTIVITY
+import ActivityContainer from "../containers/Activity/ActivityContainer";
+import ActivityDetailComponent from "../components/Activity/ActivityDetailComponent";
+
 
 export default AppStack = StackNavigator(
     {
@@ -53,6 +57,12 @@ export default AppStack = StackNavigator(
         },
         STORYDETAIL: {
             screen: StoryDetailContainer
+        },
+        ACTIVITY: {
+            screen: ActivityContainer
+        },
+        ACTIVITYDETAIL: {
+            screen: ActivityDetailComponent
         },
     }, {
 
