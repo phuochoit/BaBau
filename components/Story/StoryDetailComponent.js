@@ -1,15 +1,11 @@
 import React, { Component } from 'react';
 import { WebView } from 'react-native';
-import { Container, Content, Spinner, Text, Thumbnail } from "native-base";
+import { Container, Spinner, Text, Thumbnail } from "native-base";
 import { Row, Grid, Col } from 'react-native-easy-grid';
-import { isUndefined, isEmpty } from "lodash";
-
 // header
 import HeaderComponent from "../Config/HeaderComponent";
-
 //styles
 import { styles, deviceHeight } from "../../assets/css/style";
-
 class StoryDetailComponent extends Component {
     constructor(props) {
         super(props);
@@ -20,7 +16,7 @@ class StoryDetailComponent extends Component {
     }
     render() {
         const { params } = this.props.navigation.state;
-     
+
         const top = - (deviceHeight * 0.5);
 
         return (

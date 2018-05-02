@@ -3,11 +3,10 @@ import { TouchableOpacity } from 'react-native';
 import { Text, Icon } from "native-base";
 import { Row, Grid, Col } from 'react-native-easy-grid';
 import { upperFirst } from "lodash";
-
-import { UpdateByQuery } from "../../databases/allSchemas";
+//screenName
 import { STORYDETAIL } from "../../values/screenName";
+//style
 import { styles } from "../../assets/css/style";
-
 class StoryFlatListItem extends Component {
     constructor(props) {
         super(props);

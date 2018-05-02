@@ -2,22 +2,18 @@ import React, { Component } from 'react';
 import { FlatList } from 'react-native';
 import { Container, Content, Tabs, Text, Tab, ScrollableTab, TabHeading, getTheme, StyleProvider } from "native-base";
 import { Row, Grid, Col } from 'react-native-easy-grid';
-import { isUndefined, concat, isEmpty } from "lodash";
-
 // Component
 import HeaderComponent from "../Config/HeaderComponent";
 import StoryFlatListItem from "./StoryFlatListItem";
-
 //styles
 import { styles, deviceHeight } from "../../assets/css/style";
+//custom_theme
 import { babyTab } from "../../assets/css/custom_theme.js";
 
 class StoryComponent extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            list: [],
-            page: 0,
             refreshing: false
         };
         this._onEndReached = this._onEndReached.bind(this);
