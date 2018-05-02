@@ -7,7 +7,7 @@ import HeaderComponent from "../Config/HeaderComponent";
 import FoodFlatListItem from "./FoodFlatListItem";
 //styles
 import { styles, deviceHeight } from "../../assets/css/style";
-custom_theme
+// custom_theme
 import { babyTab } from "../../assets/css/custom_theme.js";
 class FoodComponent extends Component {
     constructor(props) {

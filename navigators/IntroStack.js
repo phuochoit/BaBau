@@ -15,7 +15,7 @@ export default IntroStack = StackNavigator(
             screen: WellcomeComponent
         },
         DUEDATECALCULATOR: {
-            screen: DueDateComponet
+            screen: DueDateCalculatorComponent
         },
         DUEDATE: {
             screen: DueDateComponet
