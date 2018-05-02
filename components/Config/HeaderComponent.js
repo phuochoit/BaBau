@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { StatusBar, TouchableOpacity } from 'react-native';
-
+import { TouchableOpacity } from 'react-native';
 import { Title, Icon, Text, Left, Header, Body, Right } from "native-base";
 import { Col, Row, Grid } from 'react-native-easy-grid';
 
