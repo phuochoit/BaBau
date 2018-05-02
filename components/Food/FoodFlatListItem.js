@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import { TouchableOpacity } from 'react-native';
 import { Text, Title, Icon } from "native-base";
 import { Col, Grid } from 'react-native-easy-grid';
-import { isUndefined, upperCase, upperFirst } from "lodash";
+import { upperCase, upperFirst } from "lodash";
 
 //style
 import { styles } from "../../assets/css/style";
+//screenName
 import { FOODDETAIL } from "../../values/screenName";
 //Functions
 import { trimStringToLength } from "../../values/Functions";
@@ -20,7 +21,7 @@ class FoodFlatListItem extends Component {
     _onShowButton() {
         const { navigationParams, navigations, _id, name, h1, h2, h3, p1, p2, p3, advice, advise, advise_h2, advise_name } = this.props;
         navigations.navigate(FOODDETAIL, {
-            detail: { _id, name,h1,h2,h3,p1,p2,p3,advice,advise,advise_name}
+            detail: { _id, name, h1, h2, h3, p1, p2, p3, advice, advise, advise_name }
         });
     }
 
@@ -36,7 +37,7 @@ class FoodFlatListItem extends Component {
                     <Grid style={styles.jccaic}>
                         <Col>
                             <TouchableOpacity onPress={this._onShowButton}>
-                                <Title  style={[styles.PregnancyFlatListItem_RightTitle, styles.txt_fontcolor1, styles.csfontF, { textAlign: 'left' }]}>{upperFirst(name)}</Title>
+                                <Title style={[styles.PregnancyFlatListItem_RightTitle, styles.txt_fontcolor1, styles.csfontF, { textAlign: 'left' }]}>{upperFirst(name)}</Title>
                             </TouchableOpacity>
                             <Text style={[styles.PregnancyFlatListItem_RightText, styles.txt_fontcolor1, styles.csfontF]}>
                                 {trimStringToLength(advice, 65)}
