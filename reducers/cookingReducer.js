@@ -45,9 +45,6 @@ const cookingReducer = (state = initialState, action) => {
                 }
             }
         case FETCH_COOKING_BY_SEARCH_TERM_SUCCEEDED:
-            console.log('====================================');
-            console.log('FETCH_COOKING_BY_SEARCH_TERM_SUCCEEDED', action.result);
-            console.log('====================================');
             return { ...state, result_search: action.result }
         case FETCH_COOKING_FAILED:
             return { ...state, currentlySending: false, error: error }

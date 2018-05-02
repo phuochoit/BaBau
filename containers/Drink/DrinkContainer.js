@@ -7,9 +7,6 @@ import { fetchNetConnected } from "../../actions/actionConnected";
 import { fetchDrinkAction } from "../../actions/actionDrink";
 
 const mapStateToProps = (state) => {
-    console.log('====================================');
-    console.log('state', state);
-    console.log('====================================');
     return {
         isConnected: state.isConnected.isConnected,
         drink: state.drink.drink
