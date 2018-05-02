@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import { } from 'react-native';
-import { Container, Content, Spinner, Text, Thumbnail } from "native-base";
+import { Container, Content, Text, Thumbnail } from "native-base";
 import { Row, Grid, Col } from 'react-native-easy-grid';
-import { isUndefined, isEmpty, map } from "lodash";
-
+import { isEmpty, map } from "lodash";
 // header
 import HeaderComponent from "../Config/HeaderComponent";
 //styles
 import { styles, deviceHeight, deviceWidth } from "../../assets/css/style";
+//Functions
 import { get_imageWeeks } from "../../values/Functions";
 
 class PregnancyDetailComponent extends Component {

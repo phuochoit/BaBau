@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { FlatList } from 'react-native';
-import { Container, Content, Spinner } from "native-base";
+import { Container, Content } from "native-base";
 import { Row, Grid } from 'react-native-easy-grid';
-import { isUndefined } from "lodash";
-
 // header
 import HeaderComponent from "../Config/HeaderComponent";
 // Component
@@ -17,7 +15,7 @@ class PregnancyComponent extends Component {
         this.state = {
         };
     }
-    componentWillMount(){
+    componentWillMount() {
         this.props.onfetchNetConnected();
     }
     componentDidMount() {
