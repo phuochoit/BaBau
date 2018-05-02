@@ -2,13 +2,11 @@ import React, { Component } from 'react';
 import { TouchableOpacity } from 'react-native';
 import { Text, Title, Icon } from "native-base";
 import { Col, Grid } from 'react-native-easy-grid';
-import { isUndefined, upperCase, upperFirst } from "lodash";
+import { upperCase, upperFirst } from "lodash";
 
 //style
 import { styles } from "../../assets/css/style";
-
-import { UpdateByQuery } from "../../databases/allSchemas";
-
+//Functions
 import { trimStringToLength } from "../../values/Functions";
 class BabyNameFlatListItem extends Component {
     constructor(props) {

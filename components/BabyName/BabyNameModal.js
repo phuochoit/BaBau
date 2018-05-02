@@ -3,8 +3,8 @@ import { } from 'react-native';
 import { Title, Text } from "native-base";
 import { Row, Grid } from 'react-native-easy-grid';
 import Modal from "react-native-modalbox";
-import { isEmpty, upperFirst} from "lodash";
-
+import { isEmpty, upperFirst } from "lodash";
+//style
 import { styles } from "../../assets/css/style";
 class BabyNameModal extends Component {
     constructor(props) {
