@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { FlatList, TouchableOpacity, AsyncStorage } from 'react-native';
-import { Container, Content, Spinner, Text, ActionSheet } from "native-base";
+import { Container, Content, Text, ActionSheet } from "native-base";
 import { Col, Row, Grid } from 'react-native-easy-grid';
 import LinearGradient from "react-native-linear-gradient";
-import { isUndefined } from "lodash";
 //style
 import { styles, deviceHeight } from "../../assets/css/style";
 //Component
@@ -12,18 +11,18 @@ import HomeFlatListItem from "./HomeFlatListItem";
 import HomeUserModal from "./HomeUserModal";
 // api 
 import { list } from "../../values/Api";
+//screenName
 import { DUEDATECALCULATOR, DUEDATE } from "../../values/screenName";
 const buttons = ["Chi tiết", "Sửa ngày dự sinh", "Tuổi thai là gì", "Hủy bỏ"];
-var cancel_index = 3;
-
+let cancel_index = 3;
 class HomeComponent extends Component {
     constructor(props) {
         super(props);
         this.state = {
             user: []
         }
-        this.props.onfetchNetConnected();
         this._onShowMore = this._onShowMore.bind(this);
+        this.props.onfetchNetConnected();
         this._getUserData();
     }
     _onShowMore = async () => {

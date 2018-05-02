@@ -3,7 +3,7 @@ import { } from 'react-native';
 import { Title, Text, View } from "native-base";
 import { Row, Grid, Col } from 'react-native-easy-grid';
 import Modal from "react-native-modalbox";
-import { isEmpty, upperFirst } from "lodash";
+import { upperFirst } from "lodash";
 
 import { styles } from "../../assets/css/style";
 class HomeUserModal extends Component {

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { TouchableOpacity } from 'react-native';
-
 import { Text, Thumbnail } from "native-base";
 import { Col, Grid } from 'react-native-easy-grid';
 // function
