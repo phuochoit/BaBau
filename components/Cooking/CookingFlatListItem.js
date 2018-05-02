@@ -24,7 +24,7 @@ class CookingFlatListItem extends Component {
     }
 
     _onDetailButton = () => {
-        const { navigations, name, description, image, ingredient, prepare, cook, eat, advice, receip_yield, cook_time, is_favourite,_id } = this.props;
+        const { navigations, name, description, image, ingredient, prepare, cook, eat, advice, receip_yield, cook_time, is_favourite, _id } = this.props;
 
         navigations.navigate(COOKINGDETAIL, {
             detail: { _id, name, description, image, ingredient, prepare, cook, eat, advice, receip_yield, cook_time, is_favourite }

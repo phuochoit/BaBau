@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { WebView } from 'react-native';
-import { Container, Content, Spinner, Text, Thumbnail, Icon } from "native-base";
+import { Container, Content, Text, Thumbnail, Icon } from "native-base";
 import { Row, Grid, Col } from 'react-native-easy-grid';
-import { isUndefined, isEmpty } from "lodash";
-
+import { isEmpty } from "lodash";
 // header
 import HeaderComponent from "../Config/HeaderComponent";
 //styles
