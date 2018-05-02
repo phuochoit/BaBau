@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import { TouchableOpacity } from 'react-native';
 import { Text, Title } from "native-base";
 import { Col, Grid } from 'react-native-easy-grid';
-import { isUndefined } from "lodash";
 
+//screenName
 import { ACTIVITYDETAIL } from "../../values/screenName";
 //style
 import { styles } from "../../assets/css/style";
+// /Functions
 import { trimStringToLength } from "../../values/Functions";
 
 export default PregnancyFlatListItem = props => {
