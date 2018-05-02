@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
 import { TouchableOpacity, Alert } from 'react-native';
-import { Container, Content, Spinner, Text, Icon, View, Form, Item, Input, Textarea, ActionSheet } from "native-base";
-import { isUndefined, filter, forEach, isEmpty } from "lodash";
+import { Container, Content, Text, Icon, View, Form, Item, Input, Textarea, ActionSheet } from "native-base";
+import { filter, forEach, isEmpty } from "lodash";
 import { Row, Grid, Col } from 'react-native-easy-grid';
 // Component
 import HeaderComponent from "../Config/HeaderComponent";
-
+//style
 import { styles, deviceHeight } from "../../assets/css/style";
-// query
-import { listByQuery, InsertByQuery } from "../../databases/allSchemas";
-
 //screenName
 import { AGENDA } from "../../values/screenName";
 
@@ -26,12 +23,9 @@ class AddAgendaComponent extends Component {
         this._onShowMileStone = this._onShowMileStone.bind(this);
 
     }
-
     componentWillMount = () => {
         this.props.onfetchMileStone();
     };
-
-
     _onSaveData = () => {
         if (!isEmpty(this.state.name) || !isEmpty(this.state.content)) {
 

@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import { TouchableOpacity, FlatList } from 'react-native';
-import { Container, Content, Spinner, Icon, View, Text } from "native-base";
-import { isUndefined, isEmpty, filter } from "lodash";
+import { Container, Content, Icon, View, Text } from "native-base";
+import { isEmpty } from "lodash";
 import { Row, Grid, Col } from 'react-native-easy-grid';
 
-// query
-// import { listByQuery, DeleteByQuery } from "../../databases/allSchemas";
 //style
 import { styles, deviceHeight } from "../../assets/css/style";
 // Component
@@ -31,30 +29,6 @@ class AgendaComponent extends Component {
     _onfetchAgenda = () => {
         this.props.onfetchAgenda();
     }
-
-    // _getAgenda = async () => {
-    //     let query = `SELECT * FROM Diary As D WHERE D.status = 1`;
-    //     await listByQuery(query).then((list) => {
-    //         this.setState({
-    //             list,
-    //             refreshing: false,
-    //         });
-    //     }).catch((error) => {
-    //         this.setState({
-    //             list: [],
-    //             refreshing: false
-    //         });
-    //     });
-    // }
-    // refreshFlatList = (deletedKey) => {
-    //     this._onDeleteAgenda(deletedKey);
-    //     this.setState({
-    //         list: filter(this.state.list, function (val, key) {
-    //             return val._id != deletedKey;
-    //         })
-    //     })
-
-    // }
     _onDeleteAgenda = (id) => {
         this.props.onfetchDeleteAgenda(id);
     }
@@ -63,12 +37,7 @@ class AgendaComponent extends Component {
             title: 'Thêm Nhật Ký'
         });
     }
-    // _onRefresh = () => {
-    //     this.setState({
-    //         refreshing: true,
-    //     });
-    //     this._getAgenda();
-    // }
+
     render() {
         console.log('====================================');
         console.log('title-agenda', this.props.agenda);

@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { TouchableOpacity, Alert, Image } from 'react-native';
+import { TouchableOpacity, Alert } from 'react-native';
 import { Text, Title, Icon, Thumbnail } from "native-base";
 import { Col, Grid, Row } from 'react-native-easy-grid';
-import { isUndefined, isEmpty, isNull } from "lodash";
 import Swipeout from 'react-native-swipeout';
 
 //style
