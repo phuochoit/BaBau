@@ -41,7 +41,7 @@ class StoryFlatListItem extends Component {
                         <Col style={{ flex: 0.2 }} >
                             <Icon
                                 onPress={this._onfavourite.bind(this)}
-                                name={(!this.state.favourite) ? 'ios-heart-outline' : 'ios-heart'}
+                                name={(this.props.is_favourite == 0) ? 'ios-heart-outline' : 'ios-heart'}
                                 style={[styles.HeaderIcon, { color: 'red' }]} />
                         </Col>
                     </Grid>
