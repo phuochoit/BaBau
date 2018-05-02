@@ -37,6 +37,7 @@ import ActivityDetailComponent from "../components/Activity/ActivityDetailCompon
 import AgendaContainer from "../containers/Agenda/AgendaContainer";
 import AgendaAddContainer from "../containers/Agenda/AgendaAddContainer";
 import AgendaUpdateContainer from "../containers/Agenda/AgendaUpdateContainer";
+import AgendaDetailComponent from "../components/Agenda/AgendaDetailComponent";
 
 export default AppStack = StackNavigator(
     {
@@ -115,6 +116,10 @@ export default AppStack = StackNavigator(
         UPDATEAGENDA: {
             screen: AgendaUpdateContainer
         },
+        DETAILAGENDA: {
+            screen: AgendaDetailComponent
+        },
+
     }, {
 
         headerMode: "none"

@@ -39,9 +39,6 @@ class AgendaComponent extends Component {
     }
 
     render() {
-        console.log('====================================');
-        console.log('title-agenda', this.props.agenda);
-        console.log('====================================');
         const { params } = this.props.navigation.state;
         const top = - (deviceHeight * 0.2);
         return (

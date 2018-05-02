@@ -28,8 +28,6 @@ export const DUEDATE = "DUEDATE";
 // Home
 export const HOME = "HOME";
 
-
-
 // Pregnancy
 export const PREGNANCY = "PREGNANCY";
 export const PREGNANCYDETAIL = "PREGNANCYDETAIL";
@@ -57,8 +55,5 @@ export const VACCINATION = "VACCINATION";
 
 //BALANCE
 export const BALANCE = "BALANCE";
-
-
-
 
 // export const DUEDATECALCULATORINFO = "DUEDATECALCULATORINFO";
