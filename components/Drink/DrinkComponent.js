@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
 import { FlatList } from 'react-native';
-import { Container, Spinner, Text, Tabs, Tab, StyleProvider, getTheme } from "native-base";
+import { Container,  Text, Tabs, Tab, StyleProvider, getTheme } from "native-base";
 import { Row, Grid, Col } from 'react-native-easy-grid';
-import { isUndefined, filter } from "lodash";
-
 // Component
 import HeaderComponent from "../Config/HeaderComponent";
 import DrinkFlatListItem from "./DrinkFlatListItem";
 //styles
 import { styles, deviceHeight } from "../../assets/css/style";
+//custom_theme
 import { babyTab } from "../../assets/css/custom_theme.js";
-
 class DrinkComponent extends Component {
     constructor(props) {
         super(props);

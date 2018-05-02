@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { TouchableOpacity } from 'react-native';
 import { Text, Title, Icon } from "native-base";
 import { Col, Grid } from 'react-native-easy-grid';
-import { isUndefined, upperCase, upperFirst } from "lodash";
-
+import { upperFirst } from "lodash";
 //style
 import { styles } from "../../assets/css/style";
+//screenName
 import { DRINKDETAIL } from "../../values/screenName";
 //Functions
 import { trimStringToLength } from "../../values/Functions";
@@ -18,7 +18,7 @@ class DrinkFlatListItem extends Component {
     }
 
     _onShowButton() {
-        const { navigationParams, navigations, _id, name, h1, h2, h3, p1, p2, p3, advice, advise, advise_h2, advise_name } = this.props;
+        const { navigations, _id, name, h1, h2, h3, p1, p2, p3, advice, advise, advise_h2, advise_name } = this.props;
         navigations.navigate(DRINKDETAIL, {
             detail: { _id, name, h1, h2, h3, p1, p2, p3, advice, advise, advise_name }
         });
@@ -26,7 +26,7 @@ class DrinkFlatListItem extends Component {
 
     render() {
 
-        const { itemIndex, navigationParams, navigations, _id, name, advice } = this.props;
+        const { itemIndex, navigations, _id, name, advice } = this.props;
         return (
             <Grid key={itemIndex} style={[styles.PregnancyFlatListItem_wrapper, { height: 110 }]}>
                 <Col style={[styles.PregnancyFlatListItem_Left, styles.jccaic, styles.bg_color12]}>
