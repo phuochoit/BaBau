@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
 import { TouchableOpacity } from 'react-native';
-import { Text, Title, Icon, View } from "native-base";
+import { Text, Title,  View } from "native-base";
 import { Col, Grid } from 'react-native-easy-grid';
-import { isUndefined, upperCase, upperFirst } from "lodash";
-
 //style
 import { styles } from "../../assets/css/style";
-
 class BalanceFlatListItem extends Component {
     constructor(props) {
         super(props);

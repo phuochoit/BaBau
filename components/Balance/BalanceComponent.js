@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
 import { FlatList } from 'react-native';
-import { Container, Spinner, Text, Content} from "native-base";
+import { Container, Text, Content } from "native-base";
 import { Row, Grid, Col } from 'react-native-easy-grid';
-import { isUndefined, filter, concat, isEmpty } from "lodash";
-
 // Component
 import HeaderComponent from "../Config/HeaderComponent";
 import BalanceFlatListItem from "./BalanceFlatListItem";
-
 //styles
 import { styles, deviceHeight } from "../../assets/css/style";
 
@@ -50,7 +47,6 @@ class BalanceComponent extends Component {
                 </Grid>
             </Container>
         );
-
     }
 }
 
