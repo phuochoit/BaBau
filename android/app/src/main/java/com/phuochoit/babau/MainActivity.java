@@ -1,4 +1,4 @@
-package com.babau;
+package com.phuochoit.babau;
 
 import com.facebook.react.ReactActivity;
 

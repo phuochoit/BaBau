@@ -3,6 +3,7 @@ import { FlatList, TouchableOpacity, AsyncStorage } from 'react-native';
 import { Container, Content, Text, ActionSheet } from "native-base";
 import { Col, Row, Grid } from 'react-native-easy-grid';
 import LinearGradient from "react-native-linear-gradient";
+import firebase from 'react-native-firebase';
 //style
 import { styles, deviceHeight } from "../../assets/css/style";
 //Component
@@ -15,6 +16,15 @@ import { list } from "../../values/Api";
 import { DUEDATECALCULATOR, DUEDATE } from "../../values/screenName";
 const buttons = ["Chi tiết", "Sửa ngày dự sinh", "Tuổi thai là gì", "Hủy bỏ"];
 let cancel_index = 3;
+
+firebase.admob().interstitial('ca-app-pub-1070789846238739/7160815396');
+
+const Banner = firebase.admob.Banner;
+
+
+const AdRequest = firebase.admob.AdRequest;
+const request = new AdRequest();
+// request.addKeyword('foobar');
 class HomeComponent extends Component {
     constructor(props) {
         super(props);
@@ -111,8 +121,23 @@ class HomeComponent extends Component {
                             />
                         </Row>
                     </Content>
+                    
                 </Grid>
                 <HomeUserModal ref={'userModal'} parentFlatList={this} />
+                <Banner
+                style={{width: 320, height: 100}}
+                    size={"LARGE_BANNER"}
+                    request={request.build()}
+                    unitId={'ca-app-pub-1070789846238739/7160815396'}
+                    onAdFailedToLoad = {(error) => {
+                        console.log('====================================');
+                        console.log('error-admob', error);
+                        console.log('====================================');
+                    }}
+                    onAdLoaded={() => {
+                        console.log('Advert loaded');
+                    }}
+                />
             </Container>
         );
     }

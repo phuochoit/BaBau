@@ -13,6 +13,7 @@
     "react-native": "0.55.3",
     "react-native-app-intro": "https://github.com/phuochoit/react-native-app-intro",
     "react-native-datepicker": "^1.7.2",
+    "react-native-firebase": "^4.0.6",
     "react-native-linear-gradient": "^2.4.0",
     "react-native-modalbox": "^1.4.2",
     "react-native-swipeout": "^2.3.3",
