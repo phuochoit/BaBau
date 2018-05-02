@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { AppRegistry } from 'react-native';
+import { AppRegistry, AppState } from 'react-native';
 import Splash from "./Splash";
 console.disableYellowBox = true;
 //Redux
@@ -30,7 +30,11 @@ export default App = () => {
 class Main extends Component {
     constructor(props) {
         super(props);
-        this.state = { currentScreen: 'Splash' };
+        this.state = {
+            currentScreen: (AppState.currentState == 'active') ? 'Splash' : 'App'
+        };
+    }
+    componentDidMount() {
         setTimeout(() => {
             this.setState({ currentScreen: 'App' })
         }, 2500);
@@ -43,4 +47,4 @@ class Main extends Component {
 }
 
 sagaMiddleware.run(rootSaga);
-AppRegistry.registerComponent('Babau', () => App);
+AppRegistry.registerComponent('Babau', () => Main);
