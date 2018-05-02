@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Picker, SafeAreaView, TouchableOpacity, ImageBackground, Text, Alert, AsyncStorage } from 'react-native';
+import { View, Picker, TouchableOpacity, ImageBackground, Text, Alert, AsyncStorage } from 'react-native';
 import { isEmpty, isNumber, isUndefined } from "lodash";
 import DatePicker from 'react-native-datepicker';
 import LinearGradient from "react-native-linear-gradient";
