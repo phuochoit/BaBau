@@ -3,8 +3,8 @@ import { } from 'react-native';
 import { Title, Text } from "native-base";
 import { Row, Grid } from 'react-native-easy-grid';
 import Modal from "react-native-modalbox";
-import { isEmpty, upperFirst} from "lodash";
-
+import { upperFirst } from "lodash";
+//style
 import { styles } from "../../assets/css/style";
 class VaccinationModal extends Component {
     constructor(props) {
@@ -13,7 +13,6 @@ class VaccinationModal extends Component {
             name: '',
             description: ''
         };
-
     }
     showVaccinationModal = (param) => {
         this.setState({
@@ -31,7 +30,7 @@ class VaccinationModal extends Component {
                 backdrop={true}
             >
                 <Grid style={[styles.wrapperBabyModal_Grid]}>
-                    <Row style={[styles.mgB, styles.fl1,styles.jccaic]}>
+                    <Row style={[styles.mgB, styles.fl1, styles.jccaic]}>
                         <Text style={[styles.PregnancyFlatListItem_RightTitle, styles.txt_fontcolor1, styles.csfontF, { textAlign: 'center' }]}>{upperFirst(this.state.name)}</Text>
                     </Row>
                     <Row style={[styles.mgB, styles.fl3]}>

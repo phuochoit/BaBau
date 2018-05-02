@@ -2,22 +2,18 @@ import React, { Component } from 'react';
 import { TouchableOpacity } from 'react-native';
 import { Text, Title, Icon } from "native-base";
 import { Col, Grid } from 'react-native-easy-grid';
-import { isUndefined, upperCase, upperFirst } from "lodash";
-
+import { upperFirst } from "lodash";
 //style
 import { styles } from "../../assets/css/style";
-
 class VaccinationFlatListItem extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-           
-        };
+        this.state = {};
         this._onShowButton = this._onShowButton.bind(this);
     }
-    
+
     _onShowButton() {
-        const {description, name } = this.props;
+        const { description, name } = this.props;
         this.props.parentFlatList.refs.vaccinationmodal.showVaccinationModal({
             description, name
         });
