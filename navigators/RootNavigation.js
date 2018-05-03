@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import { Root } from "native-base";
-import { StackNavigator,SwitchNavigator } from "react-navigation";
-// screenName
-// import { AGENDA, BABYNAME, COOKING, HOME, NOTE, PREGNANCY, STORY, WELLCOME, DUEDATECALCULATOR, PREGNANCYDETAIL, STORYDETAIL, COOKINGDETAIL, FOOD, VACCINATION, BALANCE, DRINK, DRINKDETAIL, FOODDETAIL, UPDATEAGENDA, DETAILAGENDA, ADDAGENDA, UPDATENOTE, ADDNOTE, DETAILNOTE } from "../values/screenName";
+import { StackNavigator, SwitchNavigator } from "react-navigation";
+import { BannerAdFooter } from "../components/Config/BannerComponents";
 
 // component
 import AuthLoadingScreen from "../AuthLoadingScreen";
@@ -24,4 +23,5 @@ const AppNavigator = SwitchNavigator(
 export default () =>
     <Root>
         <AppNavigator />
+        <BannerAdFooter />
     </Root>;

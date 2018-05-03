@@ -8,7 +8,6 @@ import LinearGradient from "react-native-linear-gradient";
 import { styles, deviceHeight } from "../../assets/css/style";
 //Component
 import HeaderComponent from "../Config/HeaderComponent";
-import BannerAdComponet from "../Config/BannerComponents";
 import HomeFlatListItem from "./HomeFlatListItem";
 import HomeUserModal from "./HomeUserModal";
 
@@ -119,7 +118,6 @@ class HomeComponent extends Component {
 
                 </Grid>
                 <HomeUserModal ref={'userModal'} parentFlatList={this} />
-                <BannerAdComponet />
             </Container>
         );
     }
