@@ -173,7 +173,7 @@ export const styles = StyleSheet.create({
     HeaderwrapperCenter: {},
     HeaderTitle: {
         textAlign: 'center',
-        fontSize: 22,
+        fontSize: 20,
     },
     HeaderIcon: {
         fontSize: 25,
