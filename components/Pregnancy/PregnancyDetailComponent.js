@@ -30,7 +30,7 @@ class PregnancyDetailComponent extends Component {
                     </Col>
                     <Col>
                         {map(detail.Tip, (val, key) => (
-                            <Grid>
+                            <Grid key={key}>
                                 <Row>
                                     <Text style={[styles.csfontF, styles.PregnancyDetail_Text, styles.fontcolor3]}>{isEmpty(val.content) ? null : ` - ${val.content}`}</Text>
                                 </Row>
@@ -107,7 +107,7 @@ class PregnancyDetailComponent extends Component {
                                                 <Text style={[styles.csfontF, styles.PregnancyDetail_Text, styles.fontcolor3]}>{detail.baby_health}</Text>
                                             </Col>
                                         </Row>
-                                        
+
                                         {examination}
                                         {tip}
                                     </Grid>

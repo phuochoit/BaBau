@@ -1,9 +1,10 @@
 import React, { Component } from "react";
+import { Root } from "native-base";
 import { StackNavigator } from "react-navigation";
 
 // screenName
 import * as ScreenName from "../values/screenName";
-
+import { BannerAdFooter } from "../components/Config/BannerComponents";
 //HOME
 import HomeContainer from "../containers/Home/HomeContainer";
 //Cooking
@@ -39,7 +40,7 @@ import AgendaAddContainer from "../containers/Agenda/AgendaAddContainer";
 import AgendaUpdateContainer from "../containers/Agenda/AgendaUpdateContainer";
 import AgendaDetailComponent from "../components/Agenda/AgendaDetailComponent";
 
-export default AppStack = StackNavigator(
+const AppStack = StackNavigator(
     {
         //HOME
         HOME: {
@@ -125,3 +126,9 @@ export default AppStack = StackNavigator(
         headerMode: "none"
     }
 );
+
+export default () =>
+    <Root>
+        <AppStack />
+        <BannerAdFooter />
+    </Root>;
