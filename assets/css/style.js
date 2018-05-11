@@ -209,7 +209,7 @@ export const styles = StyleSheet.create({
     },
     H1_contentBoxContentH1: {
         fontWeight: '400',
-        fontSize: 36
+        fontSize: 30
     },
     wrapperContentContent: {
 

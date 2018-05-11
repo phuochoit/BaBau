@@ -1,8 +1,7 @@
 import { StackNavigator } from "react-navigation";
 
 // screenName
-import { WELLCOME, DUEDATECALCULATOR } from "../values/screenName";
-
+import { WELLCOME, DUEDATECALCULATOR, DUEDATE, HOME} from "../values/screenName";
 //DueDate
 import DueDateCalculatorComponent from "../components/DueDateCalculator/DueDateCalculatorComponent";
 import DueDateComponet from "../components/Config/DueDateComponet";
@@ -20,7 +19,8 @@ export default IntroStack = StackNavigator(
         DUEDATE: {
             screen: DueDateComponet
         },
+        
     }, {
-        headerMode: "none"
+        headerMode: "none",
     }
 );

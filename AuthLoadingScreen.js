@@ -8,8 +8,7 @@ class AuthLoadingScreen extends Component {
         // AsyncStorage.clear();
         this._bootstrapAsync();
     }
-    componentWillMount() {
-    }
+
     _bootstrapAsync = async () => {
         let screen = '';
         try {

@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import { Root } from "native-base";
+import { View, Text } from 'react-native';
 import { StackNavigator } from "react-navigation";
 
 // screenName
 import * as ScreenName from "../values/screenName";
-import { BannerAdFooter } from "../components/Config/BannerComponents";
 //HOME
 import HomeContainer from "../containers/Home/HomeContainer";
 //Cooking
@@ -40,7 +39,7 @@ import AgendaAddContainer from "../containers/Agenda/AgendaAddContainer";
 import AgendaUpdateContainer from "../containers/Agenda/AgendaUpdateContainer";
 import AgendaDetailComponent from "../components/Agenda/AgendaDetailComponent";
 
-const AppStack = StackNavigator(
+export default AppStack = StackNavigator(
     {
         //HOME
         HOME: {
@@ -122,13 +121,8 @@ const AppStack = StackNavigator(
         },
 
     }, {
-
-        headerMode: "none"
+        initialRouteName: 'HOME',
+        headerMode: "none", 
     }
+    
 );
-
-export default () =>
-    <Root>
-        <AppStack />
-        <BannerAdFooter />
-    </Root>;

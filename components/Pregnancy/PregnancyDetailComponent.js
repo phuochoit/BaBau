@@ -4,7 +4,8 @@ import { Row, Grid, Col } from 'react-native-easy-grid';
 import { isEmpty, map } from "lodash";
 // header
 import HeaderComponent from "../Config/HeaderComponent";
-
+// ads
+import { BannerAdContent} from "../Config/BannerComponents";
 //styles
 import { styles, deviceHeight, deviceWidth } from "../../assets/css/style";
 //Functions
@@ -107,7 +108,7 @@ class PregnancyDetailComponent extends Component {
                                                 <Text style={[styles.csfontF, styles.PregnancyDetail_Text, styles.fontcolor3]}>{detail.baby_health}</Text>
                                             </Col>
                                         </Row>
-
+                                        <BannerAdContent/>
                                         {examination}
                                         {tip}
                                     </Grid>

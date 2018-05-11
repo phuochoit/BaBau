@@ -42,7 +42,8 @@ class DueDateCalculatorComponent extends Component {
         let due_date = this.state.paramDate;
         if (!isEmpty(due_date.endDate)) {
             await AsyncStorage.setItem('@calculatoreScreen', JSON.stringify(due_date));
-            this.props.navigation.navigate(HOME);
+
+            this.props.navigation.navigate('HOME');
         } else {
             Alert.alert('Thông báo', 'Vui lòng lựa chọn ngày dự sinh.');
         }

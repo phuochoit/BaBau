@@ -5,6 +5,8 @@ import { Row, Grid, Col } from 'react-native-easy-grid';
 import { isEmpty } from "lodash";
 // header
 import HeaderComponent from "../Config/HeaderComponent";
+// ads
+import { BannerAdContent } from "../Config/BannerComponents";
 //styles
 import { styles, deviceHeight } from "../../assets/css/style";
 
@@ -89,6 +91,7 @@ class CookingDetailComponent extends Component {
                                                 </Row>
                                             </Grid>
                                         </Row>
+                                        <Row><BannerAdContent /></Row>
                                         <Row style={styles.mgV}>
                                             <Grid>
                                                 <Row>

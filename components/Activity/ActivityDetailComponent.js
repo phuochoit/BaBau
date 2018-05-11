@@ -6,6 +6,8 @@ import {  isNull } from "lodash";
 
 // header
 import HeaderComponent from "../Config/HeaderComponent";
+// ads
+import { BannerAdContent } from "../Config/BannerComponents";
 //styles
 import { styles, deviceHeight } from "../../assets/css/style";
 
@@ -71,6 +73,7 @@ class ActivityDetailComponent extends Component {
                                                     : null}
                                             </Grid>
                                         </Row>
+                                        <BannerAdContent />
                                         <Row style={styles.mgV}>
                                             <Grid>
                                                 {(!isNull(params.detail.h3)) ?

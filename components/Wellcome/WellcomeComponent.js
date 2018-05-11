@@ -26,7 +26,7 @@ class WellcomeComponent extends Component {
 
     render() {
         return (
-            <View>
+            <View style={{flex:1 }}>
                 <StatusBar
                     backgroundColor={colorstatusBarProps}
                     barStyle="light-content"

@@ -115,7 +115,6 @@ class HomeComponent extends Component {
                             />
                         </Row>
                     </Content>
-
                 </Grid>
                 <HomeUserModal ref={'userModal'} parentFlatList={this} />
             </Container>

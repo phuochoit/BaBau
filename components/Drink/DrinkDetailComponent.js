@@ -7,6 +7,8 @@ import { isEmpty } from "lodash";
 // header
 import HeaderComponent from "../Config/HeaderComponent";
 import CookingFlatListItem from "../Cooking/CookingFlatListItem";
+// ads
+import { BannerAdContent } from "../Config/BannerComponents";
 //styles
 import { styles, deviceHeight } from "../../assets/css/style";
 // Function
@@ -52,6 +54,7 @@ class FoodDetailComponent extends Component {
                                 {(!isEmpty(params.detail.h3)) ? <Text style={[styles.PregnancyFlatListItem_RightTitle, styles.txt_fontcolor4, styles.csfontF, styles.txt_alignL, styles.mgT]}>{params.detail.h3}</Text> : null}
                                 {(!isEmpty(params.detail.p3)) ? <Text style={[styles.PregnancyFlatListItem_RightTitle, styles.txt_fontcolor1, styles.csfontF, styles.pdL, styles.mgT, styles.txt_contentBoxContent]}>{params.detail.p3}</Text> : null}
                             </View>
+                            <BannerAdContent />
                             {(!isEmpty(this.props.cooking)) ?
                                 <View>
                                     <Text style={[styles.PregnancyFlatListItem_RightTitle, styles.txt_fontcolor4, styles.csfontF, styles.txt_alignL, styles.pdL]} >Các món ăn liên quan</Text>
